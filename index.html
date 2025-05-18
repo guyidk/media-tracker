@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Media Tracker</h1>
+
+  <form id="media-form">
+    <input type="text" id="title" placeholder="Title" required />
+    <input type="text" id="type" placeholder="Type (Movie, Manga...)" required />
+    <input type="text" id="status" placeholder="Status (Watching, Completed...)" required />
+    <button type="submit">Add</button>
+  </form>
+
+  <div id="media-list"></div>
+
+  <div class="actions">
+    <button onclick="exportData()">📤 Export</button>
+    <input type="file" id="import-file" accept=".json" />
+    <button onclick="importData()">📥 Import</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
